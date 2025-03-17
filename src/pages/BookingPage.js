@@ -163,7 +163,7 @@ const BookTurf = () => {
             duration: duration,
             price: price
         }
-        try {~
+        try {
             setLoading(true);
             const response = await api.post("/turfs/createBooking", payload);
             if (response) {
