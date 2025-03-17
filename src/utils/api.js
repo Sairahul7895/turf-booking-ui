@@ -2,7 +2,8 @@ import axios from "axios";
 import { getToken, clearAuthData } from "../utils/localStorage";
 
 const api = axios.create({
-    baseURL: "http://localhost:8080/api", // Your API base URL
+    // baseURL: "http://localhost:8080/api", // Your API base URL
+    baseURL: "https://turf-booking-api.onrender.com/api"
 });
 
 api.interceptors.request.use(
